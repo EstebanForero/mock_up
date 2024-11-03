@@ -1,3 +1,4 @@
+import React from "react";
 
 type Message = {
   recipient: "user" | "liza",
@@ -125,7 +126,10 @@ const ChatScreen = () => {
     >
       {messages.map(message => {
         if (message.isDaySeparator) {
-          return <div className="border border-black"></div>
+          return <div className="mb-8">
+            <hr className="border border-black"/>
+            <p className="font-semibold">New chat</p>
+          </div>
         }
 
         return (
