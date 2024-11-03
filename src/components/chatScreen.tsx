@@ -1,5 +1,3 @@
-import React from "react";
-
 type Message = {
   recipient: "user" | "liza",
   content: string
